@@ -23,6 +23,86 @@ navMenu.querySelectorAll('a').forEach(link => {
     });
 });
 
+// Hero typing animation
+(function () {
+    const titleEl = document.getElementById('heroTitle');
+    if (!titleEl) return;
+
+    const lines = [
+        { text: '기술을', highlight: true },
+        { text: ' 이해하는', highlight: false },
+        { break: true },
+        { text: '서비스 기획자.', highlight: false }
+    ];
+
+    let html = '';
+    let charQueue = [];
+
+    // Build character queue
+    lines.forEach(line => {
+        if (line.break) {
+            charQueue.push({ type: 'break' });
+            return;
+        }
+        const chars = line.text.split('');
+        chars.forEach((ch, i) => {
+            charQueue.push({
+                type: 'char',
+                char: ch,
+                highlightStart: line.highlight && i === 0,
+                highlightEnd: line.highlight && i === chars.length - 1
+            });
+        });
+    });
+
+    let i = 0;
+    const cursor = '<span class="cursor"></span>';
+
+    function type() {
+        if (i >= charQueue.length) {
+            // Remove cursor after typing done, then fade in rest
+            setTimeout(() => {
+                titleEl.innerHTML = titleEl.innerHTML.replace(cursor, '');
+                fadeInSequence();
+            }, 600);
+            return;
+        }
+
+        const item = charQueue[i];
+
+        // Remove existing cursor
+        html = html.replace(cursor, '');
+
+        if (item.type === 'break') {
+            html += '<br>';
+        } else {
+            if (item.highlightStart) html += '<span class="hero-title-highlight">';
+            html += item.char;
+            if (item.highlightEnd) html += '</span>';
+        }
+
+        titleEl.innerHTML = html + cursor;
+        i++;
+
+        // Speed: faster for spaces, normal for chars
+        const delay = item.type === 'break' ? 120 : (item.char === ' ' ? 60 : 80);
+        setTimeout(type, delay);
+    }
+
+    // Start typing after short delay
+    setTimeout(type, 500);
+})();
+
+// Sequential fade-in for hero elements
+function fadeInSequence() {
+    const fadeEls = document.querySelectorAll('.hero-fade');
+    fadeEls.forEach((el, index) => {
+        setTimeout(() => {
+            el.classList.add('show');
+        }, index * 400);
+    });
+}
+
 // Scroll animation (Intersection Observer)
 const observerOptions = {
     threshold: 0.1,
@@ -39,7 +119,7 @@ const observer = new IntersectionObserver((entries) => {
 
 // Add fade-in class to elements
 document.querySelectorAll(
-    '.about-grid, .stat-card, .skill-category, .timeline-item, .project-card, .ai-card, .contact-card, .ai-philosophy'
+    '.stat-item, .career-item, .project-card, .skill-col, .contact-content'
 ).forEach(el => {
     el.classList.add('fade-in');
     observer.observe(el);

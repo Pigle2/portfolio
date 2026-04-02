@@ -632,6 +632,34 @@ ul {
 }
 
 /* ================================
+   Hero Typing Animation
+   ================================ */
+.hero-title .cursor {
+    display: inline-block;
+    width: 3px;
+    height: 0.9em;
+    background: var(--gold);
+    margin-left: 4px;
+    vertical-align: baseline;
+    animation: blink 0.8s step-end infinite;
+}
+
+@keyframes blink {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0; }
+}
+
+.hero-fade {
+    transition: opacity 0.8s ease, transform 0.8s ease;
+    transform: translateY(16px);
+}
+
+.hero-fade.show {
+    opacity: 1 !important;
+    transform: translateY(0);
+}
+
+/* ================================
    Animations
    ================================ */
 .fade-in {
