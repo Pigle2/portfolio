@@ -427,16 +427,31 @@ ul {
     max-width: 600px;
 }
 
-.project-link {
+.project-link-cta {
     display: inline-block;
-    margin-top: 16px;
-    font-size: 0.88rem;
+    margin-top: 20px;
+    font-size: 0.95rem;
+    font-weight: 600;
     color: var(--gold);
+    border-bottom: 1.5px solid var(--gold);
+    padding-bottom: 4px;
     transition: var(--transition);
+    letter-spacing: 0.02em;
 }
 
-.project-link:hover {
-    opacity: 0.7;
+.project-link-cta .link-arrow {
+    display: inline-block;
+    transition: transform 0.3s ease;
+    margin-right: 4px;
+}
+
+.project-link-cta:hover {
+    color: var(--text);
+    border-color: var(--text);
+}
+
+.project-link-cta:hover .link-arrow {
+    transform: translateX(6px);
 }
 
 .project-divider {
