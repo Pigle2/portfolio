@@ -1,0 +1,12 @@
+# Local Claude Code state
+.claude/
+
+# Project-local ouroboros install (uv venv + redirected HOME)
+.venv/
+.ouroboros-local/
+.mcp.json
+
+# Stray ouroboros artifacts (in case any leak out of HOME redirect)
+data/
+logs/
+*.db
