@@ -928,6 +928,22 @@ ul {
     font-weight: 300;
 }
 
+/* Past Experience — h3 헤딩 (사례 제목) */
+.experience-heading {
+    font-family: var(--sans);
+    font-size: 1.45rem;
+    font-weight: 700;
+    color: var(--text);
+    margin-top: 48px;
+    margin-bottom: 16px;
+    letter-spacing: -0.01em;
+    line-height: 1.3;
+}
+
+.editorial-body > .experience-heading:first-child {
+    margin-top: 0;
+}
+
 /* km — 운영 규칙 발췌 블록 */
 .km-excerpt {
     margin: 40px 0;
