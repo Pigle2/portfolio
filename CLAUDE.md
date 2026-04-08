@@ -15,13 +15,13 @@ HTML / CSS / JS 순수. Google Fonts. GitHub Pages 자동 배포.
 
 | 경로 | URL | 상태 |
 |---|---|---|
-| `index.html` (root) | `/portfolio/` | **메인 = v2 dark editorial. 사용자 명시 승인 없이 수정 금지.** |
+| `index.html` (root) | `/portfolio/` | **메인 = v3 "AI로 프로젝트를 진행하는 사람" (2026-04-09 승격).** 수정 시 사용자 명시 승인 필요. |
 | `v1/` | `/portfolio/v1/` | 보존만. 수정 금지. |
-| `v2/` | `/portfolio/v2/` | 보존만. 수정 금지. |
-| `v3/` | `/portfolio/v3/` | 작업 중. 자유 수정. 외부 미리보기 URL. |
+| `v2/` | `/portfolio/v2/` | 보존만. 이전 메인(dark editorial). 수정 금지. |
 
-- 신규 버전은 항상 `v{n}/` 서브 디렉토리. root 직접 빌드 금지.
+- **새 작업 버전 시작 시** 반드시 `v{n}/` 서브 디렉토리에서 빌드. root 직접 빌드 금지.
 - 메인 승격(root 갱신)은 사용자 명시 지시 시에만.
+- 현재 메인을 새 버전으로 승격 시 기존 root를 `v{이전번호}/`로 백업 후 진행.
 
 ## 작업 룰
 

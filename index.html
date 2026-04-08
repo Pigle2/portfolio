@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>임상준 | 서비스 기획자</title>
+    <title>임상준 | 포트폴리오</title>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400;1,600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400;1,600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 </head>
 <body>
 
@@ -19,9 +19,10 @@
         </button>
         <ul class="nav-menu" id="navMenu">
             <li><a href="#about">About</a></li>
-            <li><a href="#career">Career</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#skills">Skills</a></li>
+            <li><a href="#operate">How I Work</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#km">km</a></li>
+            <li><a href="#origin">Origin</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
         <div class="nav-status">
@@ -31,7 +32,7 @@
     </div>
 </nav>
 
-<!-- Hero Section -->
+<!-- Hero Section (v2 카피 그대로 — 사용자 명시 결정) -->
 <section class="hero" id="hero">
     <div class="hero-content">
         <div class="hero-badge">FEATURE &nbsp; PORTFOLIO / 2026</div>
@@ -51,327 +52,265 @@
     </div>
 </section>
 
-<!-- About / Stats Section -->
+<!-- 2. About — 무엇이 다른가 -->
 <section class="section" id="about">
     <div class="container">
-        <div class="stats-grid">
-            <div class="stat-item">
-                <span class="stat-number">11<span class="stat-plus">+</span></span>
-                <span class="stat-label">YEARS IN IT INDUSTRY</span>
-            </div>
-            <div class="stat-item">
-                <span class="stat-number">7</span>
-                <span class="stat-label">YEARS AS DEVELOPER</span>
-            </div>
-            <div class="stat-item">
-                <span class="stat-number">3<span class="stat-plus">+</span></span>
-                <span class="stat-label">YEARS AS PM / PLANNER</span>
-            </div>
-            <div class="stat-item">
-                <span class="stat-number">1M<span class="stat-plus">+</span></span>
-                <span class="stat-label">APP DOWNLOADS</span>
-            </div>
+        <div class="section-header">
+            <div class="section-badge">WHAT MAKES IT DIFFERENT</div>
+            <h2 class="section-title">무엇이 다른가.</h2>
+        </div>
+        <div class="editorial-body">
+            <p>
+                백엔드 개발 7년, 기획 3년+. 지금은 그 경험을 AI 팀을 만드는 데 사용합니다.
+                코드는 에이전트가 작성하고, 저는 무엇을 만들지 정합니다.
+            </p>
+            <p>
+                여러 에이전트가 서로 조율하고 검증하며 24시간 일하는 시스템을 설계합니다.
+                한 에이전트의 결과물을 다른 에이전트가 검증하고, 잘못된 곳은 다시 돌려
+                보냅니다. 사람이 자는 동안에도 시스템은 스스로 진행합니다.
+            </p>
         </div>
     </div>
 </section>
 
-<!-- Career Timeline Section -->
-<section class="section" id="career">
+<!-- 3. How I Work — 작업 체계 8개 -->
+<section class="section" id="operate">
     <div class="container">
-        <div class="career-header">
-            <div class="career-badge">CAREER PATH</div>
-            <h2 class="career-title">Evolution.</h2>
+        <div class="section-header">
+            <div class="section-badge">HOW I WORK</div>
+            <h2 class="section-title">작업 방식.</h2>
+            <p class="section-sub">
+                AI로 프로젝트를 진행할 때 사용하는 8가지 디테일.
+            </p>
         </div>
 
-        <div class="career-list">
-            <!-- Current -->
-            <div class="career-item">
-                <div class="career-date"><em>2025.10 — Present</em></div>
-                <div class="career-detail">
-                    <h3>서비스 기획 (과장)</h3>
-                    <p class="career-company">현대차 그룹사 협력사</p>
-                    <div class="career-tags">
-                        <span class="career-tag">서비스 기획</span>
-                        <span class="career-tag">AI 활용</span>
-                    </div>
-                    <p class="career-desc">현대차 그룹 디지털 서비스 기획. AI 도구(Claude Code, ChatGPT) 활용한 업무 효율화</p>
-                </div>
-            </div>
-
-            <div class="career-divider"></div>
-
-            <!-- 소프트위즈 -->
-            <div class="career-item">
-                <div class="career-date"><em>2024.10 — 2025.04</em></div>
-                <div class="career-detail">
-                    <h3>서비스기획팀 차장</h3>
-                    <p class="career-company">소프트위즈</p>
-                    <div class="career-tags">
-                        <span class="career-tag">증권 HTS/MTS</span>
-                        <span class="career-tag">로직 검증</span>
-                    </div>
-                    <p class="career-desc">증권 HTS/MTS/WTS 기획 — 생체 인증 로그인, 배당률 로직 검증</p>
-                </div>
-            </div>
-
-            <div class="career-divider"></div>
-
-            <!-- 붕붕마켓 -->
-            <div class="career-item">
-                <div class="career-date"><em>2024.02 — 2024.08</em></div>
-                <div class="career-detail">
-                    <h3>기획팀 팀장</h3>
-                    <p class="career-company">붕붕마켓</p>
-                    <div class="career-tags">
-                        <span class="career-tag">O2O 플랫폼</span>
-                        <span class="career-tag">화면설계서</span>
-                    </div>
-                    <p class="career-desc">중고차 O2O 플랫폼 — 출장/방문 진단 기능 전체 기획</p>
-                </div>
-            </div>
-
-            <div class="career-divider"></div>
-
-            <!-- 알라딘 -->
-            <div class="career-item">
-                <div class="career-date"><em>2023.05 — 2023.10</em></div>
-                <div class="career-detail">
-                    <h3>전략기획팀 부장</h3>
-                    <p class="career-company">알라딘글로벌알앤디센터</p>
-                    <div class="career-tags">
-                        <span class="career-tag">블록체인</span>
-                        <span class="career-tag">프로젝트 총괄</span>
-                    </div>
-                    <p class="career-desc">블록체인 쇼핑몰 앱 서비스 기획, 팀장으로 프로젝트 총괄</p>
-                </div>
-            </div>
-
-            <div class="career-divider"></div>
-
-            <!-- 디메인 -->
-            <div class="career-item">
-                <div class="career-date"><em>2022.04 — 2023.01</em></div>
-                <div class="career-detail">
-                    <h3>기획팀 과장</h3>
-                    <p class="career-company">디메인</p>
-                    <div class="career-tags">
-                        <span class="career-tag">팬덤 커뮤니티</span>
-                        <span class="career-tag">QA</span>
-                    </div>
-                    <p class="career-desc">모바일 팬덤 커뮤니티 / 노래방 서비스 기획, QA 프로세스 수립, 구글플레이 출시</p>
-                </div>
-            </div>
-
-            <div class="career-divider"></div>
-
-            <!-- 프리버 -->
-            <div class="career-item">
-                <div class="career-date"><em>2021.06 — 2022.02</em></div>
-                <div class="career-detail">
-                    <h3>기획팀 과장 (에이전시 PM)</h3>
-                    <p class="career-company">프리버</p>
-                    <div class="career-tags">
-                        <span class="career-tag">에이전시</span>
-                        <span class="career-tag">다수 프로젝트</span>
-                    </div>
-                    <p class="career-desc">다수 외부 프로젝트 PM — 요구사항 분석, IA/화면설계서 작성, WBS 일정 관리</p>
-                </div>
-            </div>
-
-            <div class="career-divider"></div>
-
-            <!-- 퍼니맵 -->
-            <div class="career-item">
-                <div class="career-date"><em>2020.01 — 2021.01</em></div>
-                <div class="career-detail">
-                    <h3>개발팀 팀장</h3>
-                    <p class="career-company">퍼니맵</p>
-                    <div class="career-tags">
-                        <span class="career-tag">팀 리딩</span>
-                        <span class="career-tag">AWS</span>
-                    </div>
-                    <p class="career-desc">모바일 앱 서비스 구축 총괄, AWS 인프라 설계, 개발 인력 채용 및 팀 리딩</p>
-                </div>
-            </div>
-
-            <div class="career-divider"></div>
-
-            <!-- 플라이빙 -->
-            <div class="career-item">
-                <div class="career-date"><em>2019.04 — 2019.11</em></div>
-                <div class="career-detail">
-                    <h3>백엔드 개발 (책임연구원)</h3>
-                    <p class="career-company">플라이빙</p>
-                    <p class="career-desc">앱 서비스 API/DB 설계 및 서버 개발 (Laravel, AWS)</p>
-                </div>
-            </div>
-
-            <div class="career-divider"></div>
-
-            <!-- 루덴스플레이 -->
-            <div class="career-item">
-                <div class="career-date"><em>2018.04 — 2019.03</em></div>
-                <div class="career-detail">
-                    <h3>백엔드 개발 (책임연구원)</h3>
-                    <p class="career-company">루덴스플레이</p>
-                    <p class="career-desc">스크래치 앱 서비스 API/DB 설계 및 서버 개발 및 유지보수 (Laravel, AWS)</p>
-                </div>
-            </div>
-
-            <div class="career-divider"></div>
-
-            <!-- 미스터픽 -->
-            <div class="career-item featured">
-                <div class="career-date"><em>2014.11 — 2017.06</em></div>
-                <div class="career-detail">
-                    <h3>플랫폼개발팀</h3>
-                    <p class="career-company">미스터픽 (첫차)</p>
-                    <div class="career-tags">
-                        <span class="career-tag">REST API</span>
-                        <span class="career-tag">AWS 인프라</span>
-                        <span class="career-tag">DB 설계</span>
-                    </div>
-                    <p class="career-desc">4인 팀으로 서비스 초기 구축, REST API/DB 설계/AWS 인프라 전체 담당. 100만 다운로드, 누적 거래액 1,000억 돌파</p>
-                </div>
-            </div>
-
-            <div class="career-divider"></div>
-
-            <!-- 바이코어 -->
-            <div class="career-item">
-                <div class="career-date"><em>2011.12 — 2014.02</em></div>
-                <div class="career-detail">
-                    <h3>개발2부 팀원</h3>
-                    <p class="career-company">바이코어</p>
-                    <p class="career-desc">게임 운영 관리자 페이지, 회사 웹사이트 개발 (ASP.NET, MSSQL)</p>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- Projects Section -->
-<section class="section" id="projects">
-    <div class="container">
-        <div class="career-header">
-            <h2 class="career-title">Evolution.</h2>
-            <p class="section-label">SELECTED WORKS</p>
-        </div>
-
-        <!-- Project 1: 첫차 -->
-        <div class="project-card">
-            <div class="project-top">
-                <div class="project-info">
-                    <span class="project-badge">AUTOMOTIVE</span>
-                    <h3 class="project-title">첫차 — 중고차 거래 플랫폼</h3>
-                    <p class="project-desc">
-                        4명의 소규모 팀으로 서비스를 0에서 만들어 100만 다운로드까지 성장시킨 프로젝트.
-                        REST API, DB 설계, AWS 인프라, 관리자 페이지 등 서버 전체를 담당했습니다.
-                        데이터 구조와 서비스 확장성을 기획 단계에서 함께 고려하는 습관을 만들어줬습니다.
+        <div class="operate-list">
+            <div class="operate-item">
+                <div class="operate-num">01</div>
+                <div class="operate-body">
+                    <h3>Claude Code × Codex 크로스 확인</h3>
+                    <p>
+                        한 모델이 작성한 산출물을 다른 모델이 다시 검증합니다. 단일 모델에
+                        의존할 때 발생하는 오판과 누락을 시스템 차원에서 걸러냅니다.
                     </p>
                 </div>
             </div>
-            <div class="project-divider"></div>
-            <div class="project-metrics">
-                <div class="metric">
-                    <span class="metric-value">100만+</span>
-                    <span class="metric-label">다운로드</span>
-                </div>
-                <div class="metric">
-                    <span class="metric-value">1,000억+</span>
-                    <span class="metric-label">누적 거래액</span>
-                </div>
-            </div>
-        </div>
 
-        <!-- Project 2: 증권 HTS -->
-        <div class="project-card">
-            <div class="project-top">
-                <div class="project-info">
-                    <span class="project-badge badge-fintech">FINTECH</span>
-                    <h3 class="project-title">증권 HTS — 배당률 로직 오류 발견</h3>
-                    <p class="project-desc">
-                        증권 HTS/MTS/WTS 모바일 생체 인증 로그인 기획 중,
-                        배당률 계산 로직에 오류가 있는 것을 개발 경험을 바탕으로 발견했습니다.
-                        7년간의 서버 개발 경험이 있었기에, 로직의 문제를 기획 단계에서 짚어내고
-                        수정 방향을 제시할 수 있었습니다.
+            <div class="operate-item">
+                <div class="operate-num">02</div>
+                <div class="operate-body">
+                    <h3>9단계 SDLC</h3>
+                    <p>
+                        자료조사 → 플로우 → 기능명세서 → 상세기획서 → 아키텍처 설계 →
+                        구현 → 산출물 검증 → E2E 테스트 → 보안 점검. 각 단계는 독립된
+                        게이트를 가지며, 사용자 확인 없이 다음 단계로 넘어가지 않습니다.
                     </p>
                 </div>
             </div>
-            <div class="project-divider"></div>
-            <div class="project-metrics">
-                <div class="metric">
-                    <span class="metric-value">출시 전</span>
-                    <span class="metric-label">장애 예방</span>
-                </div>
-                <div class="metric">
-                    <span class="metric-value">로직 검증</span>
-                    <span class="metric-label">개발 경험 활용</span>
+
+            <div class="operate-item">
+                <div class="operate-num">03</div>
+                <div class="operate-body">
+                    <h3>하네스 개념</h3>
+                    <p>
+                        에이전트가 자유롭게 판단하되, 판단의 결과는 사전에 정의된 하네스
+                        (통제 환경) 안에서만 작동합니다. 품질과 자율성의 경계를 문서로 고정합니다.
+                    </p>
                 </div>
             </div>
-        </div>
 
-        <!-- Project 3: AI 활용 -->
-        <div class="project-card">
-            <div class="project-top">
-                <div class="project-info">
-                    <span class="project-badge badge-ai">AI SHOWCASE</span>
-                    <h3 class="project-title">Claude Code로 직접 만든 크몽 클론</h3>
-                    <p class="project-desc">
-                        Claude Code를 활용하여 직접 개발한 크몽(Kmong) 클론 웹서비스.
-                        서비스 기획부터 개발, 배포까지 Claude Code를 도구로 활용해 0→1로 완성했습니다.
-                        기획자가 AI 도구를 적극 활용하여 실제 동작하는 웹 서비스를 직접 만들어낸 실행력.
+            <div class="operate-item">
+                <div class="operate-num">04</div>
+                <div class="operate-body">
+                    <h3>에이전트 팀</h3>
+                    <p>
+                        위 9단계를 각각 다른 에이전트가 담당합니다. 기획, 설계, 구현, 검증,
+                        테스트, 보안 에이전트가 각자의 역할을 수행하고 오케스트레이터가
+                        조율합니다. 필요에 따라 새 에이전트를 동적으로 생성합니다.
                     </p>
-                    <a href="https://cmong-chi.vercel.app/" target="_blank" class="project-link-cta"><span class="link-arrow">→</span> 라이브 서비스 보기</a>
+                </div>
+            </div>
+
+            <div class="operate-item">
+                <div class="operate-num">05</div>
+                <div class="operate-body">
+                    <h3>자기개선 루프</h3>
+                    <p>
+                        시스템이 주기적으로 자기 프로세스의 병목과 실패 패턴을 찾고 작업
+                        규칙을 스스로 갱신합니다. 사람의 개입 없이 다음 사이클에 반영됩니다.
+                    </p>
+                </div>
+            </div>
+
+            <div class="operate-item">
+                <div class="operate-num">06</div>
+                <div class="operate-body">
+                    <h3>워크트리 격리</h3>
+                    <p>
+                        모든 에이전트는 격리된 git 워크트리에서 작업합니다. 멀티 에이전트가
+                        동시에 같은 저장소를 편집할 때 발생하는 머지 충돌을 구조적으로 예방합니다.
+                    </p>
+                </div>
+            </div>
+
+            <div class="operate-item">
+                <div class="operate-num">07</div>
+                <div class="operate-body">
+                    <h3>24시간 스케줄링</h3>
+                    <p>
+                        스케줄러가 잠들지 않습니다. 사용자가 자고 있어도 에이전트는 km
+                        프로젝트의 다음 단계를 자율적으로 진행합니다. 아침에 확인하는 것은
+                        완료된 산출물입니다.
+                    </p>
+                </div>
+            </div>
+
+            <div class="operate-item">
+                <div class="operate-num">08</div>
+                <div class="operate-body">
+                    <h3>km/CLAUDE.md — 작업 규칙 문서</h3>
+                    <p>
+                        위 7개의 작업 원칙과 에이전트 규칙이 km 프로젝트의 CLAUDE.md
+                        파일에 모두 명문화되어 있습니다. 말로 하는 방식이 아니라 문서가
+                        강제하는 방식입니다. 아래 km 섹션에서 발췌로 확인할 수 있습니다.
+                    </p>
                 </div>
             </div>
         </div>
     </div>
 </section>
 
-<!-- Skills Section -->
-<section class="section" id="skills">
+<!-- 4. Past Experience: 백엔드 시절 사례 (경험) -->
+<section class="section" id="experience">
     <div class="container">
-        <div class="skills-grid">
-            <div class="skill-col">
-                <h3 class="skill-heading"><em>01.</em> Planning</h3>
-                <div class="skill-divider"></div>
-                <ul class="skill-list">
-                    <li>화면설계서 (Figma)</li>
-                    <li>서비스 정책 정의</li>
-                    <li>IA / 유저 플로우</li>
-                    <li>QA 시나리오 설계</li>
-                    <li>요구사항 분석 / WBS</li>
-                </ul>
-            </div>
-            <div class="skill-col">
-                <h3 class="skill-heading"><em>02.</em> Technical</h3>
-                <div class="skill-divider"></div>
-                <ul class="skill-list">
-                    <li>REST API 설계 (과거)</li>
-                    <li>AWS (EC2, RDS, S3)</li>
-                    <li>DB 설계 / 서버 구축</li>
-                    <li>Git / GitHub</li>
-                    <li>Linux 서버 관리</li>
-                    <li>PHP / Laravel / MySQL</li>
-                </ul>
-            </div>
-            <div class="skill-col">
-                <h3 class="skill-heading"><em>03.</em> AI Integration</h3>
-                <div class="skill-divider"></div>
-                <ul class="skill-list">
-                    <li>Claude Code</li>
-                    <li>ChatGPT / Gemini</li>
-                    <li>N8N (자동화 워크플로우)</li>
-                    <li>Notion / Figma</li>
-                    <li>AI 활용 업무 효율화</li>
-                </ul>
-            </div>
+        <div class="section-header">
+            <div class="section-badge">PAST EXPERIENCE</div>
+            <h2 class="section-title">이전 작업.</h2>
+            <p class="section-sub">백엔드 7년의 두 가지 사례. 지금 km을 만드는 판단의 근거.</p>
+        </div>
+
+        <div class="editorial-body">
+            <h3 class="experience-heading">첫차 — 중고차 거래 플랫폼</h3>
+            <p>
+                4명 팀으로 0에서 시작해 100만 다운로드까지, 누적 거래액 1,000억까지 끌고 간
+                중고차 거래 플랫폼. REST API · DB 설계 · AWS 인프라 · 관리자 페이지 등 서버
+                전체를 담당했습니다. 0에서 1까지의 흐름을 직접 굴려본 경험이 km 시스템을
+                설계할 때의 판단 근거로 작동합니다.
+            </p>
+
+            <h3 class="experience-heading">증권 HTS — 배당률 로직 오류 발견</h3>
+            <p>
+                증권 HTS/MTS/WTS 모바일 생체 인증 로그인 기획 중, 배당률 계산 로직에 오류가
+                있는 것을 7년간의 서버 개발 경험으로 기획 단계에서 발견했습니다. 출시 전 장애를
+                예방하고 수정 방향을 제시했습니다. AI 산출물의 기술적 타당성을 판단할 때 이런
+                경험이 그대로 작동합니다.
+            </p>
         </div>
     </div>
 </section>
 
-<!-- Contact Section -->
+<!-- 5. Case Study: km -->
+<section class="section" id="km">
+    <div class="container">
+        <div class="section-header">
+            <div class="section-badge">CASE STUDY</div>
+            <h2 class="section-title">km.</h2>
+            <p class="section-sub">부동산 경매 물건 탐색 시스템.</p>
+        </div>
+
+        <div class="editorial-body">
+            <p>
+                km은 수많은 부동산 경매 매물 중에서 좋은 물건을 찾아내는 프로그램입니다.
+                현재 개발 중이며, 위에서 설명한 8가지 작업 체계가 그대로 적용되는
+                첫 본격 프로젝트입니다.
+            </p>
+            <p>
+                역할 분담은 명확합니다. Claude가 오케스트레이터로서 기획·설계·개발을
+                주도하고, 사용자는 비용이 발생하는 결정과 단계 전환 승인만 합니다.
+                에이전트는 자율적으로 판단하고 실행하되, 모든 산출물은 크로스 리뷰를 거쳐
+                승인됩니다.
+            </p>
+            <p>
+                아래는 <code>km/CLAUDE.md</code>에 명문화된 세 가지 작업 원칙입니다.
+            </p>
+        </div>
+
+        <!-- km/CLAUDE.md 발췌 1: Cross-Review -->
+        <blockquote class="km-excerpt">
+            <div class="km-excerpt-label">km/CLAUDE.md — Cross-Review 원칙</div>
+            <pre>모든 에이전트 산출물은 Claude(오케스트레이터)가 반드시 검토 후 승인한다.
+에이전트가 만든 결과물을 그대로 적용하지 않는다 — 항상 크로스 체크.
+품질 미달 시 피드백과 함께 에이전트에게 재작업을 지시한다.
+에이전트 간 충돌 시 Claude가 최종 결정한다.</pre>
+        </blockquote>
+
+        <!-- km/CLAUDE.md 발췌 2: Agent System -->
+        <blockquote class="km-excerpt">
+            <div class="km-excerpt-label">km/CLAUDE.md — Agent System</div>
+            <pre>Claude는 직접 작업하지 않고, 에이전트에게 지시하여 작업을 수행한다.
+에이전트는 백그라운드로 실행 — 대화가 끊기지 않도록.
+겹치지 않는 작업은 병렬로 진행 — 독립 작업은 동시에 여러 에이전트 투입.
+여러 에이전트가 같은 파일을 동시에 수정하지 않는다 — 한 파일은 한 에이전트만.</pre>
+        </blockquote>
+
+        <!-- km/CLAUDE.md 발췌 3: 스케줄 / 워크트리 -->
+        <blockquote class="km-excerpt">
+            <div class="km-excerpt-label">km/CLAUDE.md — 스케줄 &amp; 워크트리</div>
+            <pre>스케줄 등록/변경/삭제 시 /docs/schedules.md에 반드시 반영한다.
+새 세션 시작 시 schedules.md를 읽고 활성 스케줄을 재등록한다.
+
+에이전트는 feature 브랜치(워크트리)에서 작업한다.
+산출물 유형별 병합 조건 충족 확인 후 main에 병합.</pre>
+        </blockquote>
+
+        <div class="editorial-body km-cta-block">
+            <p>
+                km은 현재 구현 중입니다. 라이브 링크는 배포 시점에 이 섹션에 연결됩니다.
+            </p>
+        </div>
+    </div>
+</section>
+
+<!-- 5. Origin: 크몽 클론 -->
+<section class="section" id="origin">
+    <div class="container">
+        <div class="section-header">
+            <div class="section-badge">ORIGIN</div>
+            <h2 class="section-title">그 전에, 크몽 클론.</h2>
+        </div>
+
+        <div class="editorial-body">
+            <p>
+                km을 시작하기 전, 기존 서비스(크몽) 구조를 따라 만들어보면서 지금 사용하고 있는
+                작업 체계의 원형이 된 워크플로우를 익혔습니다. 학습용으로 만들었지만, 이
+                프로젝트에서 "AI로 서비스를 0에서 1까지 진행하는 감각"을 잡았습니다.
+            </p>
+            <a href="https://cmong-chi.vercel.app/" target="_blank" rel="noopener" class="project-link-cta">
+                <span class="link-arrow">→</span> 라이브 보기
+            </a>
+        </div>
+    </div>
+</section>
+
+<!-- 6. Meta: 이 사이트 -->
+<section class="section" id="meta">
+    <div class="container">
+        <div class="section-header">
+            <div class="section-badge">META</div>
+            <h2 class="section-title">이 사이트.</h2>
+        </div>
+
+        <div class="editorial-body">
+            <p>
+                이 포트폴리오 사이트 자체도 같은 시스템으로 빌드되었습니다. 기획부터 카피,
+                구조, 디자인까지 에이전트 팀이 분담했고 최종 승인만 사람이 했습니다.
+                지금 보고 계신 이 페이지가 곧 그 증거입니다.
+            </p>
+        </div>
+    </div>
+</section>
+
+<!-- 7. Contact -->
 <section class="section" id="contact">
     <div class="container">
         <div class="contact-content">
@@ -380,6 +319,27 @@
             <div class="contact-sub">
                 <a href="tel:010-5044-7485" class="contact-phone">010-5044-7485</a>
             </div>
+        </div>
+    </div>
+</section>
+
+<!-- 8. Background — 판단 근거 (경력 한두 줄, 진짜 마지막) -->
+<section class="section" id="background">
+    <div class="container">
+        <div class="section-header">
+            <div class="section-badge">BACKGROUND</div>
+            <h2 class="section-title">판단 근거.</h2>
+        </div>
+
+        <div class="editorial-body">
+            <p>
+                백엔드 개발 7년, 기획 3년+. 현재는 AI 활용 기획 + QA 업무를 맡고 있습니다.
+                이 경력은 AI 산출물의 기술적 타당성과 기획 적정성을 판단하는 근거로
+                작동합니다.
+            </p>
+            <p class="editorial-muted">
+                상세 이력은 이력서에서 다룹니다.
+            </p>
         </div>
     </div>
 </section>
