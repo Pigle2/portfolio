@@ -29,11 +29,11 @@ navMenu.querySelectorAll('a').forEach(link => {
     if (!titleEl) return;
 
     const lines = [
-        { text: 'AI 에이전트 팀을', highlight: false },
+        { text: 'AI ', highlight: false },
+        { text: '에이전트 팀', highlight: true },
+        { text: '을', highlight: false },
         { break: true },
-        { text: '운영하는 ', highlight: false },
-        { text: '기발자', highlight: true },
-        { text: '.', highlight: false }
+        { text: '운영합니다.', highlight: false }
     ];
 
     let html = '';
