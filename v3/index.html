@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>임상준 | 포트폴리오</title>
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400;1,600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<!-- Navigation -->
+<nav class="nav" id="nav">
+    <div class="nav-container">
+        <a href="#hero" class="nav-logo">SJ.IM</a>
+        <button class="nav-toggle" id="navToggle" aria-label="메뉴 열기">
+            <span></span><span></span><span></span>
+        </button>
+        <ul class="nav-menu" id="navMenu">
+            <li><a href="#about">About</a></li>
+            <li><a href="#operate">How I Work</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#km">KM</a></li>
+            <li><a href="#origin">Origin</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="nav-status">
+            <span class="nav-location">SEOUL, KR</span>
+            <span class="nav-available">AVAILABLE FOR WORK</span>
+        </div>
+    </div>
+</nav>
+
+<!-- Hero Section (v2 카피 그대로 — 사용자 명시 결정) -->
+<section class="hero" id="hero">
+    <div class="hero-content">
+        <div class="hero-badge">FEATURE &nbsp; PORTFOLIO / 2026</div>
+        <h1 class="hero-title" id="heroTitle"></h1>
+        <p class="hero-desc hero-fade" style="opacity: 0;">
+            개발자로 7년, 기획자로 4년. 지금은 시스템의 근간을 아는 기획력으로 AI 팀을
+            만듭니다. 코드는 에이전트가 작성하고, 저는 무엇을 만들지 정합니다.
+        </p>
+    </div>
+    <div class="hero-quote hero-fade" style="opacity: 0;">
+        <p>
+            데이터와 시스템 구조에 대한 이해를 바탕으로, 다수의 AI가
+            <strong>24시간 일하는 시스템</strong>으로 비즈니스 목표를 달성하는
+            프로덕트를 설계합니다.
+        </p>
+    </div>
+</section>
+
+<!-- 2. About — 무엇이 다른가 -->
+<section class="section" id="about">
+    <div class="container">
+        <div class="section-header">
+            <div class="section-badge">WHAT MAKES IT DIFFERENT</div>
+            <h2 class="section-title">무엇이 다른가.</h2>
+        </div>
+        <div class="editorial-body">
+            <p>
+                여러 에이전트가 서로 조율하고 검증하며 24시간 일하는 시스템을 설계합니다.
+                한 에이전트의 결과물을 다른 에이전트가 검증하고, 잘못된 곳은 다시 돌려
+                보냅니다. 사람이 자는 동안에도 시스템은 스스로 진행합니다.
+            </p>
+        </div>
+    </div>
+</section>
+
+<!-- 3. How I Work — 작업 체계 8개 -->
+<section class="section" id="operate">
+    <div class="container">
+        <div class="section-header">
+            <div class="section-badge">HOW I WORK</div>
+            <h2 class="section-title">작업 방식.</h2>
+            <p class="section-sub">
+                AI로 프로젝트를 진행할 때 사용하는 8가지 디테일.
+            </p>
+        </div>
+
+        <div class="operate-list">
+            <div class="operate-item">
+                <div class="operate-num">01</div>
+                <div class="operate-body">
+                    <h3>Claude Code × Codex 크로스 확인</h3>
+                    <p>
+                        한 모델이 작성한 산출물을 다른 모델이 다시 검증합니다. 단일 모델에
+                        의존할 때 발생하는 오판과 누락을 시스템 차원에서 걸러냅니다.
+                    </p>
+                </div>
+            </div>
+
+            <div class="operate-item">
+                <div class="operate-num">02</div>
+                <div class="operate-body">
+                    <h3>9단계 SDLC</h3>
+                    <p>
+                        자료조사 → 플로우 → 기능명세서 → 상세기획서 → 아키텍처 설계 →
+                        구현 → 산출물 검증 → E2E 테스트 → 보안 점검. 각 단계는 독립된
+                        게이트를 가지며, 사용자 확인 없이 다음 단계로 넘어가지 않습니다.
+                    </p>
+                </div>
+            </div>
+
+            <div class="operate-item">
+                <div class="operate-num">03</div>
+                <div class="operate-body">
+                    <h3>하네스 개념</h3>
+                    <p>
+                        에이전트가 자유롭게 판단하되, 판단의 결과는 사전에 정의된 하네스
+                        (통제 환경) 안에서만 작동합니다. 품질과 자율성의 경계를 문서로 고정합니다.
+                    </p>
+                </div>
+            </div>
+
+            <div class="operate-item">
+                <div class="operate-num">04</div>
+                <div class="operate-body">
+                    <h3>에이전트 팀</h3>
+                    <p>
+                        위 9단계를 각각 다른 에이전트가 담당합니다. 기획, 설계, 구현, 검증,
+                        테스트, 보안 에이전트가 각자의 역할을 수행하고 오케스트레이터가
+                        조율합니다. 필요에 따라 새 에이전트를 동적으로 생성합니다.
+                    </p>
+                </div>
+            </div>
+
+            <div class="operate-item">
+                <div class="operate-num">05</div>
+                <div class="operate-body">
+                    <h3>자기개선 루프</h3>
+                    <p>
+                        시스템이 주기적으로 자기 프로세스의 병목과 실패 패턴을 찾고 작업
+                        규칙을 스스로 갱신합니다. 사람의 개입 없이 다음 사이클에 반영됩니다.
+                    </p>
+                </div>
+            </div>
+
+            <div class="operate-item">
+                <div class="operate-num">06</div>
+                <div class="operate-body">
+                    <h3>워크트리 격리</h3>
+                    <p>
+                        모든 에이전트는 격리된 git 워크트리에서 작업합니다. 멀티 에이전트가
+                        동시에 같은 저장소를 편집할 때 발생하는 머지 충돌을 구조적으로 예방합니다.
+                    </p>
+                </div>
+            </div>
+
+            <div class="operate-item">
+                <div class="operate-num">07</div>
+                <div class="operate-body">
+                    <h3>24시간 스케줄링</h3>
+                    <p>
+                        스케줄러가 잠들지 않습니다. 사용자가 자고 있어도 에이전트는 KM
+                        프로젝트의 다음 단계를 자율적으로 진행합니다. 아침에 확인하는 것은
+                        완료된 산출물입니다.
+                    </p>
+                </div>
+            </div>
+
+            <div class="operate-item">
+                <div class="operate-num">08</div>
+                <div class="operate-body">
+                    <h3>km/CLAUDE.md — 작업 규칙 문서</h3>
+                    <p>
+                        위 7개의 작업 원칙과 에이전트 규칙이 KM 프로젝트의 CLAUDE.md
+                        파일에 모두 명문화되어 있습니다. 말로 하는 방식이 아니라 문서가
+                        강제하는 방식입니다. 아래 KM 섹션에서 발췌로 확인할 수 있습니다.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- 4. Past Experience: 백엔드 시절 사례 (경험) -->
+<section class="section" id="experience">
+    <div class="container">
+        <div class="section-header">
+            <div class="section-badge">PAST EXPERIENCE</div>
+            <h2 class="section-title">이전 작업.</h2>
+            <p class="section-sub">백엔드 7년의 두 가지 사례. 지금 KM을 만드는 판단의 근거.</p>
+        </div>
+
+        <div class="editorial-body">
+            <h3 class="experience-heading">첫차 — 중고차 거래 플랫폼</h3>
+            <p>
+                4명 팀으로 0에서 시작해 100만 다운로드까지, 누적 거래액 1,000억까지 끌고 간
+                중고차 거래 플랫폼. REST API · DB 설계 · AWS 인프라 · 관리자 페이지 등 서버
+                전체를 담당했습니다. 0에서 1까지의 흐름을 직접 굴려본 경험이 KM 시스템을
+                설계할 때의 판단 근거로 작동합니다.
+            </p>
+
+            <h3 class="experience-heading">증권 HTS — 배당률 로직 오류 발견</h3>
+            <p>
+                증권 HTS/MTS/WTS 모바일 생체 인증 로그인 기획 중, 배당률 계산 로직에 오류가
+                있는 것을 7년간의 서버 개발 경험으로 기획 단계에서 발견했습니다. 출시 전 장애를
+                예방하고 수정 방향을 제시했습니다. AI 산출물의 기술적 타당성을 판단할 때 이런
+                경험이 그대로 작동합니다.
+            </p>
+        </div>
+    </div>
+</section>
+
+<!-- 5. Case Study: km -->
+<section class="section" id="km">
+    <div class="container">
+        <div class="section-header">
+            <div class="section-badge">CASE STUDY</div>
+            <h2 class="section-title">KM.</h2>
+            <p class="section-sub">부동산 경매 물건 탐색 시스템.</p>
+            <a href="https://km-ashen.vercel.app/" target="_blank" rel="noopener" class="project-link-cta">
+                <span class="link-arrow">→</span> 라이브 보기
+            </a>
+        </div>
+
+        <div class="editorial-body">
+            <p>
+                KM은 수많은 부동산 경매 매물 중에서 좋은 물건을 찾아내는 프로그램입니다.
+                현재 개발 중이며, 위에서 설명한 8가지 작업 체계가 그대로 적용되는
+                첫 본격 프로젝트입니다.
+            </p>
+            <p>
+                역할 분담은 명확합니다. Claude가 오케스트레이터로서 기획·설계·개발을
+                주도하고, 사용자는 비용이 발생하는 결정과 단계 전환 승인만 합니다.
+                에이전트는 자율적으로 판단하고 실행하되, 모든 산출물은 크로스 리뷰를 거쳐
+                승인됩니다.
+            </p>
+            <p>
+                아래는 <code>km/CLAUDE.md</code>에 명문화된 세 가지 작업 원칙입니다.
+            </p>
+        </div>
+
+        <!-- km/CLAUDE.md 발췌 1: Cross-Review -->
+        <blockquote class="km-excerpt">
+            <div class="km-excerpt-label">km/CLAUDE.md — Cross-Review 원칙</div>
+            <pre>모든 에이전트 산출물은 Claude(오케스트레이터)가 반드시 검토 후 승인한다.
+에이전트가 만든 결과물을 그대로 적용하지 않는다 — 항상 크로스 체크.
+품질 미달 시 피드백과 함께 에이전트에게 재작업을 지시한다.
+에이전트 간 충돌 시 Claude가 최종 결정한다.</pre>
+        </blockquote>
+
+        <!-- km/CLAUDE.md 발췌 2: Agent System -->
+        <blockquote class="km-excerpt">
+            <div class="km-excerpt-label">km/CLAUDE.md — Agent System</div>
+            <pre>Claude는 직접 작업하지 않고, 에이전트에게 지시하여 작업을 수행한다.
+에이전트는 백그라운드로 실행 — 대화가 끊기지 않도록.
+겹치지 않는 작업은 병렬로 진행 — 독립 작업은 동시에 여러 에이전트 투입.
+여러 에이전트가 같은 파일을 동시에 수정하지 않는다 — 한 파일은 한 에이전트만.</pre>
+        </blockquote>
+
+        <!-- km/CLAUDE.md 발췌 3: 스케줄 / 워크트리 -->
+        <blockquote class="km-excerpt">
+            <div class="km-excerpt-label">km/CLAUDE.md — 스케줄 &amp; 워크트리</div>
+            <pre>스케줄 등록/변경/삭제 시 /docs/schedules.md에 반드시 반영한다.
+새 세션 시작 시 schedules.md를 읽고 활성 스케줄을 재등록한다.
+
+에이전트는 feature 브랜치(워크트리)에서 작업한다.
+산출물 유형별 병합 조건 충족 확인 후 main에 병합.</pre>
+        </blockquote>
+
+        <div class="editorial-body km-cta-block">
+            <p>
+                KM은 현재 구현 중입니다.
+            </p>
+        </div>
+    </div>
+</section>
+
+<!-- 5. Origin: 크몽 클론 -->
+<section class="section" id="origin">
+    <div class="container">
+        <div class="section-header">
+            <div class="section-badge">ORIGIN</div>
+            <h2 class="section-title">크몽 클론 프로젝트 크뭉.</h2>
+            <a href="https://cmong-chi.vercel.app/" target="_blank" rel="noopener" class="project-link-cta">
+                <span class="link-arrow">→</span> 라이브 보기
+            </a>
+        </div>
+
+        <div class="editorial-body">
+            <p>
+                KM을 시작하기 전, 기존 서비스(크몽) 구조를 따라 만들어보면서 지금 사용하고 있는
+                작업 체계의 원형이 된 워크플로우를 익혔습니다. 학습용으로 만들었지만, 이
+                프로젝트에서 "AI로 서비스를 0에서 1까지 진행하는 감각"을 잡았습니다.
+            </p>
+        </div>
+    </div>
+</section>
+
+<!-- 6. Meta: 이 사이트 -->
+<section class="section" id="meta">
+    <div class="container">
+        <div class="section-header">
+            <div class="section-badge">META</div>
+            <h2 class="section-title">이 사이트.</h2>
+        </div>
+
+        <div class="editorial-body">
+            <p>
+                이 포트폴리오 사이트 자체도 같은 시스템으로 빌드되었습니다. 기획부터 카피,
+                구조, 디자인까지 에이전트 팀이 분담했고 최종 승인만 사람이 했습니다.
+                지금 보고 계신 이 페이지가 곧 그 증거입니다.
+            </p>
+        </div>
+    </div>
+</section>
+
+<!-- 7. Contact -->
+<section class="section" id="contact">
+    <div class="container">
+        <div class="contact-content">
+            <p class="contact-label">READY FOR NEW CHALLENGES</p>
+            <a href="mailto:godvosi@gmail.com" class="contact-email">godvosi@gmail.com</a>
+            <div class="contact-sub">
+                <a href="tel:010-5044-7485" class="contact-phone">010-5044-7485</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- 8. Background — 판단 근거 (경력 한두 줄, 진짜 마지막) -->
+<section class="section" id="background">
+    <div class="container">
+        <div class="section-header">
+            <div class="section-badge">BACKGROUND</div>
+            <h2 class="section-title">판단 근거.</h2>
+        </div>
+
+        <div class="editorial-body">
+            <p>
+                백엔드 개발 7년, 기획 4년. 현재는 AI 활용 기획 + QA 업무를 맡고 있습니다.
+                이 경력은 AI 산출물의 기술적 타당성과 기획 적정성을 판단하는 근거로
+                작동합니다.
+            </p>
+            <p class="editorial-muted">
+                상세 이력은 <a href="resume/" style="color:#6c63ff;">이력서</a>에서 다룹니다.
+            </p>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+    <div class="container footer-inner">
+        <p class="footer-copy">&copy; 2026 PORTFOLIO</p>
+        <p class="footer-built">BUILT WITH <strong>CLAUDE CODE</strong></p>
+    </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
