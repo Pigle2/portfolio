@@ -21,9 +21,10 @@
         <ul class="nav-menu" id="navMenu">
             <li><a href="#about">About</a></li>
             <li><a href="#operate">How I Work</a></li>
-            <li><a href="#experience">Experience</a></li>
+            <li><a href="#insight">Insight</a></li>
             <li><a href="#km">KM</a></li>
             <li><a href="#origin">Origin</a></li>
+            <li><a href="#experience">Experience</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
         <div class="nav-status">
@@ -164,7 +165,7 @@
             <div class="operate-item">
                 <div class="operate-num">08</div>
                 <div class="operate-body">
-                    <h3>km/CLAUDE.md — 작업 규칙 문서</h3>
+                    <h3>CLAUDE.md — 작업 규칙 문서</h3>
                     <p>
                         위 7개의 작업 원칙과 에이전트 규칙이 KM 프로젝트의 CLAUDE.md
                         파일에 모두 명문화되어 있습니다. 말로 하는 방식이 아니라 문서가
@@ -176,30 +177,30 @@
     </div>
 </section>
 
-<!-- 4. Past Experience: 백엔드 시절 사례 (경험) -->
-<section class="section" id="experience">
+<!-- 5-0. Case Study: 증시 인사이트 (운영 중, 프로젝트 중 최상단) -->
+<section class="section" id="insight">
     <div class="container">
         <div class="section-header">
-            <div class="section-badge">PAST EXPERIENCE</div>
-            <h2 class="section-title">이전 작업.</h2>
-            <p class="section-sub">백엔드 7년의 두 가지 사례. 지금 KM을 만드는 판단의 근거.</p>
+            <div class="section-badge">LIVE PRODUCT</div>
+            <h2 class="section-title">증시 인사이트.</h2>
+            <p class="section-sub">한국 증시 종목 분석 리포트.</p>
+            <a href="https://skynet-stock.vercel.app/" target="_blank" rel="noopener" class="project-link-cta">
+                <span class="link-arrow">→</span> 라이브 보기
+            </a>
         </div>
 
         <div class="editorial-body">
-            <h3 class="experience-heading">첫차 — 중고차 거래 플랫폼</h3>
             <p>
-                4명 팀으로 0에서 시작해 100만 다운로드까지, 누적 거래액 1,000억까지 끌고 간
-                중고차 거래 플랫폼. REST API · DB 설계 · AWS 인프라 · 관리자 페이지 등 서버
-                전체를 담당했습니다. 0에서 1까지의 흐름을 직접 굴려본 경험이 KM 시스템을
-                설계할 때의 판단 근거로 작동합니다.
+                증시 인사이트는 한국 증시의 종목 정보에서 투자 인사이트를 만들어 내는
+                서비스입니다. 공개 데이터 크롤링과 키움 OpenAPI를 조합해 원천 데이터를
+                모으고, 수집된 숫자에서 패턴을 읽어 종목별 리포트로 정리합니다.
             </p>
-
-            <h3 class="experience-heading">증권 HTS — 배당률 로직 오류 발견</h3>
             <p>
-                증권 HTS/MTS/WTS 모바일 생체 인증 로그인 기획 중, 배당률 계산 로직에 오류가
-                있는 것을 7년간의 서버 개발 경험으로 기획 단계에서 발견했습니다. 출시 전 장애를
-                예방하고 수정 방향을 제시했습니다. AI 산출물의 기술적 타당성을 판단할 때 이런
-                경험이 그대로 작동합니다.
+                사람이 개입하지 않아도 수집과 분석 파이프라인이 스스로 돌아갑니다.
+                자동으로 크롤링이 실행되고, 그 결과가 리포트로 쌓입니다.
+            </p>
+            <p>
+                현재 배포되어 운영 중인 서비스입니다.
             </p>
         </div>
     </div>
@@ -291,7 +292,36 @@
     </div>
 </section>
 
-<!-- 6. Meta: 이 사이트 -->
+<!-- 7. Past Experience: 백엔드 시절 사례 (경험) — 프로젝트 뒤로 이동 -->
+<section class="section" id="experience">
+    <div class="container">
+        <div class="section-header">
+            <div class="section-badge">PAST EXPERIENCE</div>
+            <h2 class="section-title">이전 작업.</h2>
+            <p class="section-sub">백엔드 7년의 두 가지 사례. 지금 프로젝트를 판단하는 근거.</p>
+        </div>
+
+        <div class="editorial-body">
+            <h3 class="experience-heading">첫차 — 중고차 거래 플랫폼</h3>
+            <p>
+                4명 팀으로 0에서 시작해 100만 다운로드까지, 누적 거래액 1,000억까지 끌고 간
+                중고차 거래 플랫폼. REST API · DB 설계 · AWS 인프라 · 관리자 페이지 등 서버
+                전체를 담당했습니다. 0에서 1까지의 흐름을 직접 굴려본 경험이 지금 프로젝트를
+                설계할 때의 판단 근거로 작동합니다.
+            </p>
+
+            <h3 class="experience-heading">증권 HTS — 배당률 로직 오류 발견</h3>
+            <p>
+                증권 HTS/MTS/WTS 모바일 생체 인증 로그인 기획 중, 배당률 계산 로직에 오류가
+                있는 것을 7년간의 서버 개발 경험으로 기획 단계에서 발견했습니다. 출시 전 장애를
+                예방하고 수정 방향을 제시했습니다. AI 산출물의 기술적 타당성을 판단할 때 이런
+                경험이 그대로 작동합니다.
+            </p>
+        </div>
+    </div>
+</section>
+
+<!-- 8. Meta: 이 사이트 -->
 <section class="section" id="meta">
     <div class="container">
         <div class="section-header">

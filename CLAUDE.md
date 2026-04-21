@@ -15,11 +15,11 @@ HTML / CSS / JS 순수. Google Fonts. GitHub Pages 자동 배포.
 
 | 경로 | URL | 상태 |
 |---|---|---|
-| `index.html` (root) | `/portfolio/` | **현재 메인 = v3.** v4 승격 지시 전까지 그대로. 수정 시 사용자 명시 승인 필요. |
+| `index.html` (root) | `/portfolio/` | **메인 = v4 (2026-04-21 승격).** 수정 시 사용자 명시 승인 필요. |
 | `v1/` | `/portfolio/v1/` | 보존만. 수정 금지. |
 | `v2/` | `/portfolio/v2/` | 보존만. 이전 메인(dark editorial). 수정 금지. |
-| `v3/` | `/portfolio/v3/` | 보존만. v4 작업 시작 시(2026-04-21) root 스냅샷. 수정 금지. |
-| `v4/` | `/portfolio/v4/` | **작업 중.** v3 카피 기반 + 증시 인사이트 섹션 / Hero PM 교체 / 8번 km 제거. 승격 지시 시 root로 덮어쓸 예정. |
+| `v3/` | `/portfolio/v3/` | 보존만. 이전 메인 스냅샷. 수정 금지. |
+| `v4/` | `/portfolio/v4/` | 보존만. 승격 시점 v4 스냅샷 (= 현재 root와 동일). 수정 금지. |
 
 - **새 작업 버전 시작 시** 반드시 `v{n}/` 서브 디렉토리에서 빌드. root 직접 빌드 금지.
 - 메인 승격(root 갱신)은 사용자 명시 지시 시에만.

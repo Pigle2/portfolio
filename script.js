@@ -30,9 +30,9 @@ navMenu.querySelectorAll('a').forEach(link => {
 
     const lines = [
         { text: '기술을', highlight: true },
-        { text: ' 이해하는', highlight: false },
+        { text: ' 이해하고 기획하는', highlight: false },
         { break: true },
-        { text: '서비스 기획자.', highlight: false }
+        { text: '프로덕트 매니저.', highlight: false }
     ];
 
     let html = '';
